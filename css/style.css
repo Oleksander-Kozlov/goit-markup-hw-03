@@ -79,6 +79,7 @@ body {
 /* part of .logo */
 .part {
     color: var(--primery-brand);
+    justify-content: ;
 }
 
 /* Site nav */
@@ -90,7 +91,7 @@ body {
 
 
 .site-nav .item+.item {
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 /* .site-nav .item:last-child {
@@ -319,7 +320,7 @@ body {
     margin-bottom: 0;
 
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
     vertical-align: text-top;
@@ -377,12 +378,14 @@ body {
 }
 
 .footers .logo {
+
     color: var(--primery-brand);
     margin-bottom: 16px;
 }
 
 .footers,
 .footers .down {
+
     background-color: var(--dark);
     color: var(--light);
 }
@@ -394,11 +397,13 @@ body {
     text-align: left;
     vertical-align: text-top;
     width: 264px;
+    margin-bottom: 0;
 }
 
 /* портфолио */
 .portfolio {
     padding-top: 96px;
+
 
 }
 
@@ -419,6 +424,10 @@ body {
 .exemples-list {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+
+
 }
 
 .exemples-list .link {
@@ -431,7 +440,7 @@ body {
     border: 0.5px solid var(--light);
     padding-bottom: 32px;
     border-top: none;
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .exemples-list .title {
@@ -441,12 +450,5 @@ body {
 .exemples-list .text {}
 
 .exemples-list .item {
-    width: calc(100%-2*24px)/3;
-    margin-right: 24px;
-    margin-bottom: 48px;
-    /* background-color: purple; */
-}
-
-.exemples-list .item:nth-child(3n) {
-    margin-right: 0;
+    flex-basis: calc((100% - 2*24px) / 3);
 }
